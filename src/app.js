@@ -23,6 +23,7 @@ class Triangle {
     }
 }
 
+// Pour pouvoir l’utiliser dans les tests
 module.exports = {
     Triangle:Triangle
-}
+};
