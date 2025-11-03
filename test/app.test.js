@@ -15,4 +15,12 @@ describe('Testing the Triangle Functions (3 sides)', function() {
         done();
     });
 
+    it('3. The area of the Triangle (Heron’s formula)', function(done) {
+        let t3 = new Triangle(3, 4, 5);
+        // s = (3 + 4 + 5) / 2 = 6
+        // area = √[s(s−a)(s−b)(s−c)] = √[6×3×2×1] = √36 = 6
+        expect(t3.getArea()).to.equal(6);
+        done();
+    });
+
 });
