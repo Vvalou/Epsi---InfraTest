@@ -1,23 +1,10 @@
 const Triangle = require('../src/app').Triangle;
 const expect = require('chai').expect;
 
-describe('Testing the Cube Functions', function() {
-    it('1. The side length of the Cube', function(done) {
-        let c1 = new Cube(2);
-        expect(c1.getSideLength()).to.equal(2);
+describe('Testing the Triangle Functions (3 sides)', function() {
+    it('3. The area of the Triangle', function(done) {
+        let t3 = new Triangle(3, 4, 5);  // ← les valeurs sont ici !
+        expect(t3.getArea()).to.equal(6);
         done();
     });
-    
-    it('2. The surface area of the Cube', function(done) {
-        let c2 = new Cube(5);
-        expect(c2.getSurfaceArea()).to.equal(150);
-        done();
-    });
-    
-    it('3. The volume of the Cube', function(done) {
-        let c3 = new Cube(7);
-        expect(c3.getVolume()).to.equal(343);
-        done();
-    });
-    
 });
