@@ -1,21 +1,16 @@
-class Cube {
-    constructor(length) {
-        this.length = length;
+class Triangle {
+    constructor(a, b, c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
     
-    getSideLength () {
-        return this.length;
-    }
-    
-    getSurfaceArea () {
-        return (this.length * this.length) * 6;
-    }
-    
-    getVolume () {
-        return Math.pow(this.length,3);
+    // Retourne les côtés sous forme de tableau
+    getSides() {
+        return [this.a, this.b, this.c];
     }
 }
 
 module.exports = {
-    Cube:Cube
+    Triangle:Triangle
 }
